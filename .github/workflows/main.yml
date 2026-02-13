@@ -51,7 +51,7 @@ jobs:
                 fi
 
                 MAJOR="${VERSION%%.*}"
-                ACTION="orbitcluster/oc-cicd-release-workflow"
+                ACTION="bakefoundry/bk-release-workflow"
                 WF_FILE=".github/workflows/version.yml"
                 WF_VERSION="$(grep "${ACTION}" "${WF_FILE}" | sed 's/.*@//')"
 
